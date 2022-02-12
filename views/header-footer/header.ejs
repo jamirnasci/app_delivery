@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/plasticine/100/000000/pizza.png" type="image/x-icon">
+</head>
+<%-include('style.ejs')%>
+<body>
+    <header>
+        <img id="l_bt" height="35px" src="https://th.bing.com/th/id/R.dc484d2a8f27cd4d8f24c313c5930f18?rik=f%2fmaHFvOOw5ZMQ&pid=ImgRaw&r=0" onclick="tog()">
+        <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" id="carrinho" onclick="openCarrinho()">
+    </header>
+    <div id="menu_l">
+        <a href="/pizzas">Pizzas</a><hr>
+        <a href="/bebidas">Bebidas</a><hr>
+        <a href="/carnes">Carnes</a><hr>
+        <a href="/saladas">Saladas</a><hr>
+        <a href="/sobremesas">Sobremesas</a><hr>
+    </div>

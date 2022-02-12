@@ -1,0 +1,77 @@
+<%-include('header-footer/header.ejs');%> 
+    <main>
+        <div class="first_section">
+            <div  class="first_section1">
+                <img src="https://guiadacozinha.com.br/wp-content/uploads/2019/10/pudim-de-nozes-facil.jpg" class="img_section">
+                 <h1 class="title_section">Pudim
+                    <p class="prec">R$ 8,00 Unidade</p>
+                 </h1>
+            </div>
+            
+            <form class="enter_section"  method="post" action="finaliza_pedido">
+                <input type="text" value="8" name="preco" class="input_data">
+                <input type="text" value="pudim" name="prato" class="input_data">
+                <button type="submit">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="" srcset="">
+               </button>
+            </form>
+        </div>
+        <div class="first_section">
+            <div class="first_section1">
+                 <img src="https://th.bing.com/th/id/OIP.McWI26YNHJu5_iOzlDA2SQHaFj?pid=ImgDet&rs=1" class="img_section">
+                <h1 class="title_section">Bolo
+                    <p class="prec">R$ 4,50 Unidade</p>
+                </h1>
+            </div>
+           
+            <form class="enter_section"  method="post" action="finaliza_pedido">
+                <input type="text" value="4.5" name="preco" class="input_data">
+                <input type="text" value="bolo" name="prato" class="input_data">
+                <button type="submit">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="" srcset="">
+               </button>
+            </form>
+        </div>
+        <div class="first_section">
+            <div class="first_section1">
+                <img src="https://th.bing.com/th/id/OIP.vwz7rrAtrQEga0aMvi6fJgHaEK?pid=ImgDet&rs=1" alt="" class="img_section">
+                <h1 class="title_section">Creme
+                    <p class="prec">R$ 8,00 Unidade</p>
+                </h1>
+            </div>
+            
+            <form class="enter_section"  method="post" action="finaliza_pedido">
+                <input type="text" value="8" name="preco" class="input_data">
+                <input type="text" value="creme" name="prato" class="input_data">
+                <button type="submit">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="" srcset="">
+               </button>
+            </form>
+        </div>
+        <div class="first_section">
+            <div class="first_section1">
+                <img src="https://th.bing.com/th/id/R.753692a437b533e4087407faf6a14bef?rik=4FiTxFUZEoJ2Mw&pid=ImgRaw&r=0" alt=""
+                class="img_section">
+            <h1 class="title_section">Sorvete
+                <p class="prec">R$ 5,00 Unidade</p>
+            </h1>
+            </div>
+            
+            <form class="enter_section"  method="post" action="finaliza_pedido">
+                <input type="text" value="5" name="preco" class="input_data">
+                <input type="text" value="sorvete" name="prato" class="input_data">
+                <select name="sabor">
+                    <option value="tapioca">Tapioca</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="menta">Menta</option>
+                    <option value="castanha">Castanha</option>
+                    <option value="morango">Morango</option>
+                </select>
+                <button type="submit">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="" srcset="">
+               </button>
+            </form>
+        </div>
+      
+    </main>
+<%-include('header-footer/footer.ejs');%> 

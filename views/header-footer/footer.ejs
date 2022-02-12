@@ -1,0 +1,54 @@
+<form id="modal" method="get" action="/final_pedido">
+    <input id="close" type="button" value="X" onclick="closeCarrinho()">
+    <h1>Carrinho</h1>
+    <table>
+        <tr>
+            <th>Pedido</th>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+        <% for( let i = 0; i < pedidos.length; i++ ) { %>
+            
+        <% } %>
+    </table>
+    <input type="submit" value="Finalizar">
+</form>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    let c = true
+    function tog(){
+    if(c){
+        $('#menu_l').animate({width:50 + '%'}, 'slow')
+        $('#menu_l > a, hr').toggle(1000)
+        
+        c = false
+    }
+    else{
+        $('#menu_l').animate({width:0 + '%'}, 'slow')
+        $('#menu_l > a, hr').toggle(1000)
+        c = 0
+        c = true
+    }
+    
+    }
+    function openCarrinho(){
+        $('#modal').fadeIn(1000)
+        let main = document.getElementsByTagName('main')
+        let header = document.getElementsByTagName('header')
+        main[0].style.filter = 'brightness(50%)'
+        header[0].style.filter = 'brightness(50%)'
+    }
+    function closeCarrinho(){
+        $('#modal').fadeOut(1000)
+        let main = document.getElementsByTagName('main')
+        let header = document.getElementsByTagName('header')
+        main[0].style.filter = 'brightness(100%)'
+        header[0].style.filter = 'brightness(100%)'
+    }
+    
+
+</script>

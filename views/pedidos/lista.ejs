@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de pedidos</title>
+</head>
+<style>
+    #main{
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 0px 0px 8px gray;
+        text-align: center;
+        height: 600px;
+        width: 1200px;
+    }
+    #pedidos{
+        width: 95%;
+        box-shadow: 0px 0px 10px black;
+        text-align: left;
+        margin: auto;
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+    table{
+        margin: auto;
+        border: solid 0.5px black;
+        border-spacing: 0px;
+    }
+    table > * {
+        text-align: center;
+    }
+    td, th, td{
+        width: 100px;
+        border: solid 0.5px black;
+        border-spacing: 0px;
+        padding: 0;
+    }
+    span{
+        margin-left: 10px;
+    }
+</style>
+<body> 
+
+<div id="main">
+    <h1>Pedidos</h1>
+        <% for( let i = 0; i < lista.length; i++ ) { %>
+            <div id="pedidos">
+                <span>Cliente: <%= lista[i].nome %></span><br>
+                <span>Total: <%= lista[i].preco %></span><br>
+                <span>Prato: <%= lista[i].prato %></span><br>
+                <span>Tipo: <%= lista[i].tipo %></span><br>
+                <span>Sabor: <%= lista[i].sabor %></span>
+            </div>
+        <% } %>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<%- include('header-footer/header.ejs'); %> 
+    <main>
+        <div class="first_section">
+            <div  class="first_section1">
+                <img src="https://cdn.pixabay.com/photo/2016/03/05/21/45/pizza-1239077_960_720.jpg" alt="" class="img_section">
+                 <h1 class="title_section">Pizzas</h1>
+            </div>
+            <a href="/pizzas">
+                <div class="enter_section">
+                <img src="https://images.vexels.com/media/users/3/140466/isolated/preview/842aea048a728d76de86b870e3908a1a-botao-de-seta-verde-redondo.png" alt="" srcset="">
+            </div>
+            </a>
+        </div>
+        <div class="first_section">
+            <div class="first_section1">
+                 <img src="https://th.bing.com/th/id/OIP.29feFpfnzIGfee3JyA0xgAHaFI?pid=ImgDet&w=585&h=405&rs=1" alt="" class="img_section">
+                <h1 class="title_section">Bebidas</h1>
+            </div>
+           <a href="/bebidas">
+               <div class="enter_section">
+                <img src="https://images.vexels.com/media/users/3/140466/isolated/preview/842aea048a728d76de86b870e3908a1a-botao-de-seta-verde-redondo.png" alt="" srcset="">
+            </div>
+           </a>
+            
+        </div>
+        <div class="first_section">
+            <div class="first_section1">
+                <img src="https://th.bing.com/th/id/OIP.SFTb1af3dix36SIRD9iDuQHaFB?pid=ImgDet&rs=1" alt="" class="img_section">
+                <h1 class="title_section">Saladas</h1>
+            </div>
+            <a href="/saladas">
+                <div class="enter_section">
+                <img src="https://images.vexels.com/media/users/3/140466/isolated/preview/842aea048a728d76de86b870e3908a1a-botao-de-seta-verde-redondo.png" alt="" srcset="">
+            </div>
+            </a>
+            
+        </div>
+        <div class="first_section">
+            <div class="first_section1">
+                <img src="https://th.bing.com/th/id/R.1d5bd11f0ff9fa057aed7644e52a878c?rik=Q%2fOj0jOZYetqjw&pid=ImgRaw&r=0" alt=""
+                class="img_section">
+            <h1 class="title_section">Carnes</h1>
+            </div>
+            <a href="/carnes">
+                <div class="enter_section">
+                <img src="https://images.vexels.com/media/users/3/140466/isolated/preview/842aea048a728d76de86b870e3908a1a-botao-de-seta-verde-redondo.png" alt="" srcset="">
+            </div>
+            </a>
+            
+        </div>
+        <div class="first_section">
+            <div class="first_section1">
+                <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2016/12/shutterstock_116334574.jpg" alt=""
+                class="img_section">
+            <h1 class="title_section">Sobremesas</h1>
+            </div>
+            <a href="/sobremesas">
+              <div class="enter_section">
+                
+                <img src="https://images.vexels.com/media/users/3/140466/isolated/preview/842aea048a728d76de86b870e3908a1a-botao-de-seta-verde-redondo.png" alt="" srcset="">
+            </div>  
+            </a>
+            
+        </div>
+    </main>
+<% include('header-footer/footer.ejs');%> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    let c = true
+    function tog(){
+    if(c){
+        $('#menu_l').animate({width:50 + '%'}, 'slow')
+        $('#menu_l > a, hr').toggle(1000)
+        
+        c = false
+    }
+    else{
+        $('#menu_l').animate({width:0 + '%'}, 'slow')
+        $('#menu_l > a, hr').toggle(1000)
+        c = 0
+        c = true
+    }
+    
+    }
+    
+
+</script>
